@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTML Page with jQuery</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" id="error">
+      Switch to desktop site to access this site.
+    </div>
+    <div class="container main">
+      <div class="text-content">
+        <h2>AWARD WINNING</h2>
+        <h1>DIGITAL MARKETING AGENCY</h1>
+        <p>
+          Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+          Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus
+          nec risus finibus feugiat et fermentum.
+        </p>
+        <button id="openForm">Contact Us</button>
+      </div>
+      <div class="image-content">
+        <img src="assets/hero.png" alt="Digital Marketing" />
+      </div>
+    </div>
+
+    <div class="form-popup main" id="popupForm">
+      <form
+        action="https://getform.io/f/qalodylb"
+        method="POST"
+        class="form-container"
+        id="ajaxForm"
+      >
+        <button
+          type="button"
+          class="btn-close"
+          onclick="$('#popupForm').hide()"
+        >
+          ×
+        </button>
+
+        <h2>Talk to us</h2>
+        <div class="input-group">
+          <label for="email">Work email*</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="name-inputs">
+          <div class="input-group">
+            <label for="first-name">First name*</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="input-group">
+            <label for="last-name">Last name*</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+        </div>
+        <div class="input-group checkbox">
+          <input type="checkbox" id="agree" name="agree" required />
+          <label for="agree" style="color: #616678"
+            >I agree to Fyle's terms and conditions, and provide consent to send
+            me communication.</label
+          >
+        </div>
+        <button type="submit">Contact Us</button>
+      </form>
+    </div>
+
+    <div class="gray-container main">
+      <div class="text-content">
+        <h2>WHAT WE DO</h2>
+        <h1>SERVICES PROVIDE FOR YOU</h1>
+        <p>
+          Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+          Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus
+          nec risus finibus feugiat et fermentum.
+        </p>
+      </div>
+      <div class="scroll-container-wrapper">
+        <div id="sc" class="scroll-container">
+          <div class="scroll-content">
+            <div class="card">
+              <img src="assets/1.png" alt="Service 1" />
+              <div class="overlay">
+                <div class="overlay-text">
+                  <img src="/assets/icon.png" alt="" />
+                  <h3 class="title">WEB DEVELOPMENT</h3>
+                  <p>
+                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                    Pellentesque
+                  </p>
+                  <a href="https://fylehq.com" target="_blank">
+                    <button class="card-button">
+                      READ MORE
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="37"
+                        height="10"
+                        viewBox="0 0 37 10"
+                      >
+                        <defs>
+                          <style>
+                            .a {
+                              fill: #ff3147;
+                            }
+                          </style>
+                        </defs>
+                        <g transform="translate(-352 -742)">
+                          <path
+                            class="a"
+                            d="M5,0l5,8H0Z"
+                            transform="translate(389 742) rotate(90)"
+                          />
+                          <rect
+                            class="a"
+                            width="29"
+                            height="2"
+                            transform="translate(352 746)"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/2.png" alt="Service 2" />
+              <div class="overlay">
+                <div class="overlay-text">
+                  <img src="/assets/icon.png" alt="" />
+                  <h3 class="title">WEB DEVELOPMENT</h3>
+                  <p>
+                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                    Pellentesque
+                  </p>
+                  <a href="https://fylehq.com" target="_blank">
+                    <button class="card-button">
+                      READ MORE
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="37"
+                        height="10"
+                        viewBox="0 0 37 10"
+                      >
+                        <defs>
+                          <style>
+                            .a {
+                              fill: #ff3147;
+                            }
+                          </style>
+                        </defs>
+                        <g transform="translate(-352 -742)">
+                          <path
+                            class="a"
+                            d="M5,0l5,8H0Z"
+                            transform="translate(389 742) rotate(90)"
+                          />
+                          <rect
+                            class="a"
+                            width="29"
+                            height="2"
+                            transform="translate(352 746)"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/3.png" alt="Service 3" />
+              <div class="overlay">
+                <div class="overlay-text">
+                  <img src="/assets/icon.png" alt="" />
+                  <h3 class="title">WEB DEVELOPMENT</h3>
+                  <p>
+                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                    Pellentesque
+                  </p>
+                  <a href="https://fylehq.com" target="_blank">
+                    <button class="card-button">
+                      READ MORE
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="37"
+                        height="10"
+                        viewBox="0 0 37 10"
+                      >
+                        <defs>
+                          <style>
+                            .a {
+                              fill: #ff3147;
+                            }
+                          </style>
+                        </defs>
+                        <g transform="translate(-352 -742)">
+                          <path
+                            class="a"
+                            d="M5,0l5,8H0Z"
+                            transform="translate(389 742) rotate(90)"
+                          />
+                          <rect
+                            class="a"
+                            width="29"
+                            height="2"
+                            transform="translate(352 746)"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/2.png" alt="Service 4" />
+              <div class="overlay">
+                <div class="overlay-text">
+                  <img src="/assets/icon.png" alt="" />
+                  <h3 class="title">WEB DEVELOPMENT</h3>
+                  <p>
+                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                    Pellentesque
+                  </p>
+                  <a href="https://fylehq.com" target="_blank">
+                    <button class="card-button">
+                      READ MORE
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="37"
+                        height="10"
+                        viewBox="0 0 37 10"
+                      >
+                        <defs>
+                          <style>
+                            .a {
+                              fill: #ff3147;
+                            }
+                          </style>
+                        </defs>
+                        <g transform="translate(-352 -742)">
+                          <path
+                            class="a"
+                            d="M5,0l5,8H0Z"
+                            transform="translate(389 742) rotate(90)"
+                          />
+                          <rect
+                            class="a"
+                            width="29"
+                            height="2"
+                            transform="translate(352 746)"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/1.png" alt="Service 1" />
+              <div class="overlay">
+                <div class="overlay-text">
+                  <img src="/assets/icon.png" alt="" />
+                  <h3 class="title">WEB DEVELOPMENT</h3>
+                  <p>
+                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                    Pellentesque
+                  </p>
+                  <a href="https://fylehq.com" target="_blank">
+                    <button class="card-button">
+                      READ MORE
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="37"
+                        height="10"
+                        viewBox="0 0 37 10"
+                      >
+                        <defs>
+                          <style>
+                            .a {
+                              fill: #ff3147;
+                            }
+                          </style>
+                        </defs>
+                        <g transform="translate(-352 -742)">
+                          <path
+                            class="a"
+                            d="M5,0l5,8H0Z"
+                            transform="translate(389 742) rotate(90)"
+                          />
+                          <rect
+                            class="a"
+                            width="29"
+                            height="2"
+                            transform="translate(352 746)"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/2.png" alt="Service 2" />
+              <div class="overlay">
+                <div class="overlay-text">
+                  <img src="/assets/icon.png" alt="" />
+                  <h3 class="title">WEB DEVELOPMENT</h3>
+                  <p>
+                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                    Pellentesque
+                  </p>
+                  <a href="https://fylehq.com" target="_blank">
+                    <button class="card-button">
+                      READ MORE
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="37"
+                        height="10"
+                        viewBox="0 0 37 10"
+                      >
+                        <defs>
+                          <style>
+                            .a {
+                              fill: #ff3147;
+                            }
+                          </style>
+                        </defs>
+                        <g transform="translate(-352 -742)">
+                          <path
+                            class="a"
+                            d="M5,0l5,8H0Z"
+                            transform="translate(389 742) rotate(90)"
+                          />
+                          <rect
+                            class="a"
+                            width="29"
+                            height="2"
+                            transform="translate(352 746)"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/3.png" alt="Service 3" />
+              <div class="overlay">
+                <div class="overlay-text">
+                  <img src="/assets/icon.png" alt="" />
+                  <h3 class="title">WEB DEVELOPMENT</h3>
+                  <p>
+                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                    Pellentesque
+                  </p>
+                  <a href="https://fylehq.com" target="_blank">
+                    <button class="card-button">
+                      READ MORE
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="37"
+                        height="10"
+                        viewBox="0 0 37 10"
+                      >
+                        <defs>
+                          <style>
+                            .a {
+                              fill: #ff3147;
+                            }
+                          </style>
+                        </defs>
+                        <g transform="translate(-352 -742)">
+                          <path
+                            class="a"
+                            d="M5,0l5,8H0Z"
+                            transform="translate(389 742) rotate(90)"
+                          />
+                          <rect
+                            class="a"
+                            width="29"
+                            height="2"
+                            transform="translate(352 746)"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/2.png" alt="Service 4" />
+              <div class="overlay">
+                <div class="overlay-text">
+                  <img src="/assets/icon.png" alt="" />
+                  <h3 class="title">WEB DEVELOPMENT</h3>
+                  <p>
+                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                    Pellentesque
+                  </p>
+                  <a href="https://fylehq.com" target="_blank">
+                    <button class="card-button">
+                      READ MORE
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="37"
+                        height="10"
+                        viewBox="0 0 37 10"
+                      >
+                        <defs>
+                          <style>
+                            .a {
+                              fill: #ff3147;
+                            }
+                          </style>
+                        </defs>
+                        <g transform="translate(-352 -742)">
+                          <path
+                            class="a"
+                            d="M5,0l5,8H0Z"
+                            transform="translate(389 742) rotate(90)"
+                          />
+                          <rect
+                            class="a"
+                            width="29"
+                            height="2"
+                            transform="translate(352 746)"
+                          />
+                        </g>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <div class="container bottom-level main">
+      <div class="intro">
+        <div class="title">WHY CHOOSE US</div>
+        <h3 class="sub-title">WHY WE ARE BEST</h3>
+      </div>
+
+      <div class="details">
+        <div class="content">
+          <img src="assets/1.svg" alt="" />
+          <div class="dets">Clarified Vision & Target</div>
+          <div class="subdets">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.
+          </div>
+        </div>
+        <div class="content">
+          <img src="assets/2.svg" alt="" />
+          <div class="dets">High Performance</div>
+          <div class="subdets">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.
+          </div>
+        </div>
+        <div class="content">
+          <img src="assets/3.svg" alt="" />
+          <div class="dets">Maintain Security</div>
+          <div class="subdets">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.
+          </div>
+        </div>
+        <div class="content">
+          <img src="assets/4.svg" alt="" />
+          <div class="dets">Better Strategy & Quality</div>
+          <div class="subdets">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bottom-level main panel-div">
+      <div class="intro">
+        <div class="title">OUR PROJECT</div>
+        <h3 class="sub-title">WHY WE ARE BEST</h3>
+      </div>
+
+      <div class="panel">
+        <img id="panel-image" src="assets/image.png" alt="" />
+
+        <div class="panel-data">
+          <div class="panel-window first active">
+            <div class="head">Genderless Kei – Japan’s Hot</div>
+            <div class="subhead">
+              Set to launch on the manufacturer’s new A330neo aircraft in 2017,
+              it’s offering lots of
+            </div>
+          </div>
+          <div class="panel-window second">
+            <div class="head">Better Strategy & Quality</div>
+            <div class="subhead">
+              Set to launch on the manufacturer’s new A330neo aircraft in 2017,
+              it’s offering lots of
+            </div>
+          </div>
+          <div class="panel-window third">
+            <div class="head">Genderless Kei – Japan’s Hot</div>
+            <div class="subhead">
+              Set to launch on the manufacturer’s new A330neo aircraft in 2017,
+              it’s offering lots of
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gray-container bottom-level main">
+      <div class="intro upper">
+        <div class="title">Experts growts</div>
+        <h3 class="sub-title">Our Company Growth</h3>
+      </div>
+      <div class="growth-card-list">
+        <div class="growth-card">
+          <img src="assets/heart (2).svg" alt="" />
+          <h1>199 +</h1>
+          <p>Staticfied Customers</p>
+        </div>
+        <div class="growth-card">
+          <img src="assets/clock (3).svg" alt="" />
+          <h1>1591 +</h1>
+          <p>Days Of Operation</p>
+        </div>
+        <div class="growth-card">
+          <img src="assets/Path 4402.svg" alt="" />
+          <h1>283 +</h1>
+          <p>Complete Project</p>
+        </div>
+        <div class="growth-card">
+          <img src="assets/Path 4406.svg" alt="" />
+          <h1>75 +</h1>
+          <p>Win Awards</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bottom-level main">
+      <div class="intro upper">
+        <div class="title">Client's feedback</div>
+        <h3 class="sub-title">people say's about us !</h3>
+      </div>
+      <p class="review-text">
+        Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is
+        reproduced below for those interested. Sections Bonorum et Malorum
+        original.
+      </p>
+      <p class="review">
+        <span class="client-name">JANNAT TUMPA</span> - COO, AMERIMAR
+        ENTERPRISES, INC.
+      </p>
+    </div>
+
+    <div class="footer main">
+      <img class="companies" src="assets/Group 500.png" alt="" />
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#openForm").click(function () {
+          $("#popupForm").show();
+        });
+
+        $(".btn-cancel").click(function () {
+          $("#popupForm").hide();
+        });
+
+        var dots = $(".dot");
+        var cards = $(".card");
+        var containerWidth = $(".scroll-container").width();
+        var cardWidth = cards.outerWidth(true);
+
+        var dynamicImages = {
+          first: "assets/image.png",
+        };
+
+        $(".scroll-content").bind("scroll", function () {
+          var scrollLeft = $(this).scrollLeft();
+          var index = Math.min(Math.round(scrollLeft / cardWidth), 2);
+
+          dots.removeClass("active");
+          dots.eq(index).addClass("active");
+        });
+
+        var panel = $(".panel-window");
+
+        $(".panel-window").on("click", function (ele) {
+          console.log(ele);
+          panel.removeClass("active");
+          $(ele.currentTarget).addClass("active");
+
+          var classList = $(ele.currentTarget).attr("class");
+          var image = "assets/image.png";
+          if (classList.includes("second")) {
+            image = "assets/water-flow-2464417_1920 (1).jpg";
+          } else if (classList.includes("third")) {
+            image = "assets/blank-792125_1920 (1).jpg";
+          }
+
+          $("#panel-image").attr("src", image);
+
+          console.log($(ele.currentTarget).attr("class").includes("first"));
+        });
+        $("#ajaxForm").submit(function (e) {
+          e.preventDefault();
+          var action = $(this).attr("action");
+          $("#popupForm").hide();
+          $.ajax({
+            type: "POST",
+            url: action,
+            crossDomain: true,
+            data: new FormData(this),
+            dataType: "json",
+            processData: false,
+            contentType: false,
+            headers: {
+              Accept: "application/json",
+            },
+          })
+            .done(function () {
+              alert("The form was submitted successfully.");
+            })
+            .fail(function () {
+              alert("An error occurred! Please try again later.");
+            });
+        });
+      });
+    </script>
+  </body>
+</html>
